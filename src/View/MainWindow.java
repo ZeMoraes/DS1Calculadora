@@ -16,14 +16,14 @@ import java.awt.event.KeyEvent;
 import java.awt.event.WindowAdapter;
 import java.awt.event.WindowEvent;
 
-public class View
+public class MainWindow
 {
     public JFrame frmCalculadora;
     public JTextField textField;
     ViewControl toControler = new ViewControl();
     
     /** Cria a Tela. */
-    public View()
+    public MainWindow()
     {
         initialize();
     }
@@ -132,24 +132,6 @@ public class View
             }
         });
         panel.add(btnC, "flowx,cell 0 1,grow");
-        JButton button_1 = new JButton("/");
-        button_1.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent arg0)
-            {
-                toControler.teclaPrecionada(4, true);
-            }
-        });
-        panel.add(button_1, "cell 0 2,grow");
-        JButton button_4 = new JButton("*");
-        button_4.addActionListener(new ActionListener()
-        {
-            public void actionPerformed(ActionEvent arg0)
-            {
-                toControler.teclaPrecionada(3, true);
-            }
-        });
-        panel.add(button_4, "cell 0 3,grow");
         // NUMEROS 1 a 0
         JButton button_5 = new JButton("1");
         button_5.addActionListener(new ActionListener()
@@ -243,6 +225,7 @@ public class View
         });
         panel.add(button_8, "cell 0 4,grow");
         JButton button_10 = new JButton("+/-");
+        button_10.setEnabled(false);
         button_10.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent arg0)
@@ -260,6 +243,7 @@ public class View
         });
         panel.add(button_9, "cell 0 5,grow");
         JButton button_11 = new JButton(",");
+        button_11.setEnabled(false);
         button_11.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent arg0)
@@ -277,6 +261,7 @@ public class View
         });
         panel.add(button_12, "cell 0 5,grow");
         JButton button_13 = new JButton("<-");
+        button_13.setEnabled(false);
         button_13.addActionListener(new ActionListener()
         {
             public void actionPerformed(ActionEvent arg0)
@@ -293,5 +278,23 @@ public class View
             }
         });
         panel.add(button_14, "cell 0 1,grow");
+        JButton button_4 = new JButton("*");
+        button_4.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent arg0)
+            {
+                toControler.teclaPrecionada(3, true);
+            }
+        });
+        panel.add(button_4, "cell 0 3,grow");
+        JButton button_1 = new JButton("/");
+        button_1.addActionListener(new ActionListener()
+        {
+            public void actionPerformed(ActionEvent arg0)
+            {
+                toControler.teclaPrecionada(4, true);
+            }
+        });
+        panel.add(button_1, "cell 0 2,grow");
     }
 }

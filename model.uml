@@ -627,7 +627,7 @@
               <body>new ViewControl()</body>
             </defaultValue>
           </ownedAttribute>
-          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eM1OAb-AEeiEFJUnCKio3g" name="View" specification="_eMwVgL-AEeiEFJUnCKio3g">
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eM1OAb-AEeiEFJUnCKio3g" name="MainWindow" specification="_eMwVgL-AEeiEFJUnCKio3g">
             <ownedAttribute xmi:type="uml:Property" xmi:id="_0bwHQ7-AEeiEFJUnCKio3g" name="viewcontrol" type="_YBvkwL-AEeiEFJUnCKio3g" association="_0bwHQL-AEeiEFJUnCKio3g">
               <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bwHRL-AEeiEFJUnCKio3g"/>
               <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0byjgL-AEeiEFJUnCKio3g" value="1"/>

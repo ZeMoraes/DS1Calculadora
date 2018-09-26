@@ -114,6 +114,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -128,6 +129,7 @@ public class Model
                 {
                     // .textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -142,6 +144,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -156,6 +159,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -170,6 +174,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -184,6 +189,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -198,6 +204,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -212,6 +219,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -226,6 +234,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)
@@ -240,6 +249,7 @@ public class Model
                 {
                     // window.textField.setText("");
                     toInterface.setTela("");
+                    lastOperato = "";
                     operando = "";
                 }
                 if (bork)

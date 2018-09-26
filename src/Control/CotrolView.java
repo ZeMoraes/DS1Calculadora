@@ -1,12 +1,12 @@
 package Control;
 
 import java.awt.EventQueue;
-import View.View;
+import View.MainWindow;
 
 public class CotrolView
 {
     /** @window = Instancia da Interface */
-    private static View window = new View();
+    private static MainWindow window = new MainWindow();
     
     /** Inicializa a tela. */
     public void inicializarTela()
