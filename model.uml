@@ -1,0 +1,974 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xmi:XMI xmi:version="20131001" xmlns:xmi="http://www.omg.org/spec/XMI/20131001" xmlns:PapyrusJava="http://www.eclipse.org/papyrus/PapyrusJava/1" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:standard="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard" xmlns:uml="http://www.eclipse.org/uml2/5.0.0/UML">
+  <uml:Model xmi:id="_wnox4L9_EeiEFJUnCKio3g" name="model">
+    <packageImport xmi:type="uml:PackageImport" xmi:id="_w-xfgL9_EeiEFJUnCKio3g">
+      <importedPackage xmi:type="uml:Model" href="pathmap://UML_LIBRARIES/UMLPrimitiveTypes.library.uml#_0"/>
+    </packageImport>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6Su-ML9_EeiEFJUnCKio3g" name="Calculadora">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6Y7FwL9_EeiEFJUnCKio3g" name="Control">
+        <packagedElement xmi:type="uml:Class" xmi:id="_6Y-JEL9_EeiEFJUnCKio3g" name="Control" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6d8vsL9_EeiEFJUnCKio3g" name="controView" visibility="private" isStatic="true" type="_6ZDBkL9_EeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_6eCPQL9_EeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new CotrolView()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_6eW_YL9_EeiEFJUnCKio3g" name="controlModel" visibility="private" isStatic="true" type="_6eKyIL9_EeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_6eY0kL9_EeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new Control2Model()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_s3IfQ7-AEeiEFJUnCKio3g" name="control2model" type="_6eKyIL9_EeiEFJUnCKio3g" association="_s3IfQL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_s3IfRL-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_s3IfRb-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zHrQQ7-AEeiEFJUnCKio3g" name="cotrolview" type="_6ZDBkL9_EeiEFJUnCKio3g" association="_zHrQQL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zHrQRL-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zHrQRb-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6e_4kL9_EeiEFJUnCKio3g" name="main" specification="_6eqhYL9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    controView.inicializarTela();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6g-1kL9_EeiEFJUnCKio3g" name="teclasPrecionadas" specification="_6g2SsL9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    controlModel.teclasPressionadas(tecla, bork);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6hMQ8L9_EeiEFJUnCKio3g" name="setStringTela" specification="_6hFjQL9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    controView.setTela(toTela);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6hfL4L9_EeiEFJUnCKio3g" name="getTela" specification="_6hWB8L9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return controView.getTela();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6hkrcL9_EeiEFJUnCKio3g" name="salvar" specification="_6hhoIL9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    controlModel.salvar();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_6hqLAL9_EeiEFJUnCKio3g" name="Carregar" specification="_6hoV0L9_EeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    controlModel.carregar();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6eqhYL9_EeiEFJUnCKio3g" name="main" visibility="public" isStatic="true" method="_6e_4kL9_EeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6evZ4L9_EeiEFJUnCKio3g" name="args" type="_6ee7ML9_EeiEFJUnCKio3g">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_6ezEQL9_EeiEFJUnCKio3g"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_6e0SYL9_EeiEFJUnCKio3g" value="*"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6g2SsL9_EeiEFJUnCKio3g" name="teclasPrecionadas" visibility="public" isStatic="true" method="_6g-1kL9_EeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6g5WAL9_EeiEFJUnCKio3g" name="tecla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6g6kIL9_EeiEFJUnCKio3g" name="bork">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6hFjQL9_EeiEFJUnCKio3g" name="setStringTela" visibility="public" isStatic="true" method="_6hMQ8L9_EeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6hJNoL9_EeiEFJUnCKio3g" name="toTela" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6hWB8L9_EeiEFJUnCKio3g" name="getTela" visibility="public" isStatic="true" method="_6hfL4L9_EeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_6hcIkL9_EeiEFJUnCKio3g" type="_6ee7ML9_EeiEFJUnCKio3g" direction="return"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6hhoIL9_EeiEFJUnCKio3g" name="salvar" visibility="public" isStatic="true" method="_6hkrcL9_EeiEFJUnCKio3g"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_6hoV0L9_EeiEFJUnCKio3g" name="Carregar" visibility="public" isStatic="true" method="_6hqLAL9_EeiEFJUnCKio3g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6ZDBkL9_EeiEFJUnCKio3g" name="CotrolView" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_LVoegL-AEeiEFJUnCKio3g" name="window" visibility="private" isStatic="true" type="_eMVewL-AEeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_LVoegb-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new View()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_zps_Q7-AEeiEFJUnCKio3g" name="view" type="_eM1OAb-AEeiEFJUnCKio3g" association="_zps_QL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_zps_RL-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_zps_Rb-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LVq6wL-AEeiEFJUnCKio3g" name="inicializarTela" specification="_LVoegr-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    EventQueue.invokeLater(new Runnable() {&#xD;
+&#xD;
+        public void run() {&#xD;
+            try {&#xD;
+                window.frmCalculadora.setVisible(true);&#xD;
+                Control.Carregar();&#xD;
+            } catch (Exception e) {&#xD;
+                e.printStackTrace();&#xD;
+            }&#xD;
+        }&#xD;
+    });&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LVtXAr-AEeiEFJUnCKio3g" name="setTela" specification="_LVtXAL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    window.textField.setText(operando);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_LVvzQr-AEeiEFJUnCKio3g" name="getTela" specification="_LVvzQL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return window.textField.getText();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LVoegr-AEeiEFJUnCKio3g" name="inicializarTela" visibility="public" method="_LVq6wL-AEeiEFJUnCKio3g"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LVtXAL-AEeiEFJUnCKio3g" name="setTela" visibility="public" method="_LVtXAr-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVtXAb-AEeiEFJUnCKio3g" name="operando" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_LVvzQL-AEeiEFJUnCKio3g" name="getTela" visibility="public" method="_LVvzQr-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_LVvzQb-AEeiEFJUnCKio3g" type="_6ee7ML9_EeiEFJUnCKio3g" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_6eKyIL9_EeiEFJUnCKio3g" name="Control2Model" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ci42gL-AEeiEFJUnCKio3g" name="calculadora" visibility="private" isStatic="true" type="_NixrgL-AEeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Ci42gb-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new Model()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_tlSlwr-AEeiEFJUnCKio3g" name="model" type="_NixrgL-AEeiEFJUnCKio3g" association="_tlQJgL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_tlSlw7-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_tlSlxL-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ci7Sw7-AEeiEFJUnCKio3g" name="teclasPressionadas" specification="_Ci7SwL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    calculadora.recebeTecla(tecla, bork);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Ci9vAb-AEeiEFJUnCKio3g" name="salvar" specification="_Ci9vAL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    calculadora.saveFile();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_CjALQL-AEeiEFJUnCKio3g" name="carregar" specification="_Ci9vAr-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    calculadora.readFile();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ci7SwL-AEeiEFJUnCKio3g" name="teclasPressionadas" visibility="public" method="_Ci7Sw7-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ci7Swb-AEeiEFJUnCKio3g" name="tecla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Ci7Swr-AEeiEFJUnCKio3g" name="bork">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ci9vAL-AEeiEFJUnCKio3g" name="salvar" visibility="public" method="_Ci9vAb-AEeiEFJUnCKio3g"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Ci9vAr-AEeiEFJUnCKio3g" name="carregar" visibility="public" method="_CjALQL-AEeiEFJUnCKio3g"/>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_NiszAL-AEeiEFJUnCKio3g" name="Model">
+        <packagedElement xmi:type="uml:Class" xmi:id="_NixrgL-AEeiEFJUnCKio3g" name="Model" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ni2kAL-AEeiEFJUnCKio3g" name="operando" visibility="private" isStatic="true" type="_6ee7ML9_EeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Ni5AQL-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>&quot;&quot;</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_Ni7cgL-AEeiEFJUnCKio3g" name="operador" visibility="private" isStatic="true" type="_6ee7ML9_EeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_Ni94wL-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>&quot;&quot;</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NjAVAL-AEeiEFJUnCKio3g" name="lastOperato" visibility="private" isStatic="true" type="_6ee7ML9_EeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_NjCxQL-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>&quot;&quot;</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_NjKGAL-AEeiEFJUnCKio3g" name="toInterface" visibility="private" isStatic="true" type="_NjFNgL-AEeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_NjMiQL-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new Model2Control()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_u5tbAr-AEeiEFJUnCKio3g" name="model2control" type="_NjFNgL-AEeiEFJUnCKio3g" association="_u5q-wL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_u5tbA7-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_u5tbBL-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NjT3AL-AEeiEFJUnCKio3g" name="recebeTecla" specification="_NjMiQb-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    switch(tecla) {&#xD;
+        case 1:&#xD;
+            if (operador.equals(&quot;&quot;)) {&#xD;
+                operador = realizarOperações(operando, operador, lastOperato);&#xD;
+            } else {&#xD;
+                operador = realizarOperações(operador, operando, lastOperato);&#xD;
+            }&#xD;
+            operando = operador;&#xD;
+            // window.textField.setText(operando);/// aqui tenho que se comunicar com a&#xD;
+            // interface....&#xD;
+            toInterface.setTela(operando);&#xD;
+            operador = &quot;&quot;;&#xD;
+            lastOperato = &quot;=&quot;;&#xD;
+            break;&#xD;
+        case 2:&#xD;
+            lastOperato = &quot;+&quot;;&#xD;
+            if (operador.equals(&quot;&quot;)) {&#xD;
+                operador = realizarOperações(operando, operador, &quot;+&quot;);&#xD;
+            } else {&#xD;
+                operador = realizarOperações(operador, operando, &quot;+&quot;);&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '+';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando = &quot;&quot;;&#xD;
+            break;&#xD;
+        case 3:&#xD;
+            lastOperato = &quot;*&quot;;&#xD;
+            if (operador.equals(&quot;&quot;)) {&#xD;
+                operador = realizarOperações(operando, operador, &quot;*&quot;);&#xD;
+            } else {&#xD;
+                operador = realizarOperações(operador, operando, &quot;*&quot;);&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '*';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando = &quot;&quot;;&#xD;
+            break;&#xD;
+        case 4:&#xD;
+            lastOperato = &quot;/&quot;;&#xD;
+            if (operador.equals(&quot;&quot;)) {&#xD;
+                operador = realizarOperações(operando, operador, &quot;/&quot;);&#xD;
+            } else {&#xD;
+                operador = realizarOperações(operador, operando, &quot;/&quot;);&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '/';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando = &quot;&quot;;&#xD;
+            break;&#xD;
+        case 5:&#xD;
+            lastOperato = &quot;-&quot;;&#xD;
+            if (operador.equals(&quot;&quot;)) {&#xD;
+                operador = realizarOperações(operando, operador, &quot;-&quot;);&#xD;
+            } else {&#xD;
+                operador = realizarOperações(operador, operando, &quot;-&quot;);&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '-';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando = &quot;&quot;;&#xD;
+            break;&#xD;
+        case 6:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '1';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '1';&#xD;
+            break;&#xD;
+        case 7:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // .textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '2';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '2';&#xD;
+            break;&#xD;
+        case 8:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '3';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '3';&#xD;
+            break;&#xD;
+        case 9:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '4';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '4';&#xD;
+            break;&#xD;
+        case 10:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '5';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '5';&#xD;
+            break;&#xD;
+        case 11:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '6';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '6';&#xD;
+            break;&#xD;
+        case 12:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '7';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '7';&#xD;
+            break;&#xD;
+        case 13:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '8';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '8';&#xD;
+            break;&#xD;
+        case 14:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '9';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '9';&#xD;
+            break;&#xD;
+        case 15:&#xD;
+            if (lastOperato.equals(&quot;=&quot;)) {&#xD;
+                // window.textField.setText(&quot;&quot;);&#xD;
+                toInterface.setTela(&quot;&quot;);&#xD;
+                operando = &quot;&quot;;&#xD;
+            }&#xD;
+            if (bork) {&#xD;
+                String temp = toInterface.getTela() + '0';&#xD;
+                toInterface.setTela(temp);&#xD;
+            }&#xD;
+            operando += '0';&#xD;
+            break;&#xD;
+        case 16:&#xD;
+            operador = &quot;&quot;;&#xD;
+            operando = &quot;&quot;;&#xD;
+            toInterface.setTela(&quot;&quot;);&#xD;
+            lastOperato = &quot;&quot;;&#xD;
+            break;&#xD;
+        default:&#xD;
+            break;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NjbLwb-AEeiEFJUnCKio3g" name="somar" specification="_NjWTQL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return num1 + num2;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Njk8wb-AEeiEFJUnCKio3g" name="multiplicar" specification="_NjgEQL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return num1 * num2;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Njutwb-AEeiEFJUnCKio3g" name="dividir" specification="_Njp1QL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return num1 / num2;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_Nj2Cgb-AEeiEFJUnCKio3g" name="subtrair" specification="_NjxKAL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return num1 - num2;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NkEsAL-AEeiEFJUnCKio3g" name="realizarOperações" specification="_Nj67AL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    String resultado = &quot;&quot;;&#xD;
+    if (operacao.equals(&quot;/&quot;)) {&#xD;
+        if (num2.equals(&quot;0&quot;)) {&#xD;
+            resultado = &quot;Não é possivel dividir por 0&quot;;&#xD;
+        } else if (num2.equals(&quot;&quot;)) {&#xD;
+            resultado = num1;&#xD;
+        } else {&#xD;
+            long divisao = dividir(Long.parseLong(num1), Long.parseLong(num2));&#xD;
+            resultado += divisao;&#xD;
+        }&#xD;
+    } else if (operacao.equals(&quot;*&quot;)) {&#xD;
+        if (num2.equals(&quot;&quot;)) {&#xD;
+            resultado = num1;&#xD;
+        } else {&#xD;
+            long multiplicasao = multiplicar(Long.parseLong(num1), Long.parseLong(num2));&#xD;
+            resultado += multiplicasao;&#xD;
+        }&#xD;
+    } else if (operacao.equals(&quot;+&quot;)) {&#xD;
+        if (num2.equals(&quot;&quot;)) {&#xD;
+            resultado = num1;&#xD;
+        } else {&#xD;
+            long soma = somar(Long.parseLong(num1), Long.parseLong(num2));&#xD;
+            resultado += soma;&#xD;
+        }&#xD;
+    } else if (operacao.equals(&quot;-&quot;)) {&#xD;
+        if (num2.equals(&quot;&quot;)) {&#xD;
+            resultado += num1;&#xD;
+        } else {&#xD;
+            long subtrasao = subtrair(Long.parseLong(num1), Long.parseLong(num2));&#xD;
+            resultado += subtrasao;&#xD;
+        }&#xD;
+    }&#xD;
+    return resultado;&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NkHIQL-AEeiEFJUnCKio3g" name="saveFile" specification="_NkEsAb-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    try {&#xD;
+        File arquivo1 = new File(&quot;save.txt&quot;);&#xD;
+        FileWriter fileW = new FileWriter(arquivo1);&#xD;
+        BufferedWriter buffW = new BufferedWriter(fileW);&#xD;
+        buffW.write(toInterface.getTela());&#xD;
+        buffW.close();&#xD;
+    } catch (Exception e) {&#xD;
+        toInterface.setTela(e.toString());&#xD;
+        ;&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_NkHIQr-AEeiEFJUnCKio3g" name="readFile" specification="_NkHIQb-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    try {&#xD;
+        File arquivo1 = new File(&quot;save.txt&quot;);&#xD;
+        if (arquivo1.exists()) {&#xD;
+            //arquivo ppara ser lido&#xD;
+            FileReader fileR = new FileReader(arquivo1);&#xD;
+            //arquivo buferizado&#xD;
+            BufferedReader buffR = new BufferedReader(fileR);&#xD;
+            while (buffR.ready()) {&#xD;
+                toInterface.setTela(buffR.readLine());&#xD;
+            }&#xD;
+            buffR.close();&#xD;
+        } else {&#xD;
+            arquivo1.createNewFile();&#xD;
+        }&#xD;
+    } catch (Exception e) {&#xD;
+        toInterface.setTela(&quot;Ops, houve um erro.&quot;);&#xD;
+    }&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NjMiQb-AEeiEFJUnCKio3g" name="recebeTecla" visibility="public" method="_NjT3AL-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjO-gL-AEeiEFJUnCKio3g" name="tecla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjRawL-AEeiEFJUnCKio3g" name="bork">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NjWTQL-AEeiEFJUnCKio3g" name="somar" visibility="private" method="_NjbLwb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjWTQb-AEeiEFJUnCKio3g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjYvgL-AEeiEFJUnCKio3g" name="num1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjbLwL-AEeiEFJUnCKio3g" name="num2">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NjgEQL-AEeiEFJUnCKio3g" name="multiplicar" visibility="private" method="_Njk8wb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjgEQb-AEeiEFJUnCKio3g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjiggL-AEeiEFJUnCKio3g" name="num1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Njk8wL-AEeiEFJUnCKio3g" name="num2">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Njp1QL-AEeiEFJUnCKio3g" name="dividir" visibility="private" method="_Njutwb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Njp1Qb-AEeiEFJUnCKio3g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjsRgL-AEeiEFJUnCKio3g" name="num1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjutwL-AEeiEFJUnCKio3g" name="num2">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NjxKAL-AEeiEFJUnCKio3g" name="subtrair" visibility="private" method="_Nj2Cgb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjxKAb-AEeiEFJUnCKio3g" direction="return">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NjzmQL-AEeiEFJUnCKio3g" name="num1">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nj2CgL-AEeiEFJUnCKio3g" name="num2">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_8heigBydEduyofBvg4RL2w"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Nj67AL-AEeiEFJUnCKio3g" name="realizarOperações" visibility="public" method="_NkEsAL-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nj9XQL-AEeiEFJUnCKio3g" type="_6ee7ML9_EeiEFJUnCKio3g" direction="return"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nj9XQb-AEeiEFJUnCKio3g" name="num1" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_Nj_zgL-AEeiEFJUnCKio3g" name="num2" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_NkCPwL-AEeiEFJUnCKio3g" name="operacao" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NkEsAb-AEeiEFJUnCKio3g" name="saveFile" visibility="public" method="_NkHIQL-AEeiEFJUnCKio3g"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_NkHIQb-AEeiEFJUnCKio3g" name="readFile" visibility="public" method="_NkHIQr-AEeiEFJUnCKio3g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_NjFNgL-AEeiEFJUnCKio3g" name="Model2Control" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_vu9oA7-AEeiEFJUnCKio3g" name="control" type="_6Y-JEL9_EeiEFJUnCKio3g" association="_vu9oAL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_vu9oBL-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_vu9oBb-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_TidWAb-AEeiEFJUnCKio3g" name="setTela" specification="_Tia5wL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    Control.setStringTela(operando);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_TifyQr-AEeiEFJUnCKio3g" name="getTela" specification="_TifyQL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    return Control.getTela();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_Tia5wL-AEeiEFJUnCKio3g" name="setTela" visibility="public" method="_TidWAb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TidWAL-AEeiEFJUnCKio3g" name="operando" type="_6ee7ML9_EeiEFJUnCKio3g"/>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_TifyQL-AEeiEFJUnCKio3g" name="getTela" visibility="public" method="_TifyQr-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_TifyQb-AEeiEFJUnCKio3g" type="_6ee7ML9_EeiEFJUnCKio3g" direction="return"/>
+          </ownedOperation>
+        </packagedElement>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_YBtIgL-AEeiEFJUnCKio3g" name="View">
+        <packagedElement xmi:type="uml:Class" xmi:id="_YBvkwL-AEeiEFJUnCKio3g" name="ViewControl" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_1MRlQ7-AEeiEFJUnCKio3g" name="control" type="_6Y-JEL9_EeiEFJUnCKio3g" association="_1MRlQL-AEeiEFJUnCKio3g">
+            <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_1MRlRL-AEeiEFJUnCKio3g"/>
+            <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_1MRlRb-AEeiEFJUnCKio3g" value="1"/>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_YByBAb-AEeiEFJUnCKio3g" name="teclaPrecionada" specification="_YBvkwb-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    Control.teclasPrecionadas(tecla, bork);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_YByBA7-AEeiEFJUnCKio3g" name="salvar" specification="_YByBAr-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    // TODO Auto-generated method stub&#xD;
+    Control.salvar();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_YBvkwb-AEeiEFJUnCKio3g" name="teclaPrecionada" visibility="public" method="_YByBAb-AEeiEFJUnCKio3g">
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_YBvkwr-AEeiEFJUnCKio3g" name="tecla">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_7wRIABydEduyofBvg4RL2w"/>
+            </ownedParameter>
+            <ownedParameter xmi:type="uml:Parameter" xmi:id="_YByBAL-AEeiEFJUnCKio3g" name="bork">
+              <type xmi:type="uml:PrimitiveType" href="pathmap://PapyrusJava_LIBRARIES/JavaLibrary.uml#_vAIV4I7PEdySGvm5GN66HA"/>
+            </ownedParameter>
+          </ownedOperation>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_YByBAr-AEeiEFJUnCKio3g" name="salvar" visibility="public" method="_YByBA7-AEeiEFJUnCKio3g"/>
+        </packagedElement>
+        <packagedElement xmi:type="uml:Class" xmi:id="_eMVewL-AEeiEFJUnCKio3g" name="View" visibility="public">
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eMczgL-AEeiEFJUnCKio3g" name="frmCalculadora" visibility="public" type="_eMX7Ar-AEeiEFJUnCKio3g" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eMhsAL-AEeiEFJUnCKio3g" name="textField" visibility="public" type="_eMczgb-AEeiEFJUnCKio3g" isUnique="false"/>
+          <ownedAttribute xmi:type="uml:Property" xmi:id="_eMrdAL-AEeiEFJUnCKio3g" name="toControler" visibility="private" type="_YBvkwL-AEeiEFJUnCKio3g" isUnique="false">
+            <defaultValue xmi:type="uml:OpaqueExpression" xmi:id="_eMrdAb-AEeiEFJUnCKio3g" name="defaultValue">
+              <language>JAVA</language>
+              <body>new ViewControl()</body>
+            </defaultValue>
+          </ownedAttribute>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eM1OAb-AEeiEFJUnCKio3g" name="View" specification="_eMwVgL-AEeiEFJUnCKio3g">
+            <ownedAttribute xmi:type="uml:Property" xmi:id="_0bwHQ7-AEeiEFJUnCKio3g" name="viewcontrol" type="_YBvkwL-AEeiEFJUnCKio3g" association="_0bwHQL-AEeiEFJUnCKio3g">
+              <lowerValue xmi:type="uml:LiteralInteger" xmi:id="_0bwHRL-AEeiEFJUnCKio3g"/>
+              <upperValue xmi:type="uml:LiteralUnlimitedNatural" xmi:id="_0byjgL-AEeiEFJUnCKio3g" value="1"/>
+            </ownedAttribute>
+            <language>JAVA</language>
+            <body>&#xD;
+    initialize();&#xD;
+</body>
+          </ownedBehavior>
+          <ownedBehavior xmi:type="uml:OpaqueBehavior" xmi:id="_eM8iwL-AEeiEFJUnCKio3g" name="initialize" specification="_eM6GgL-AEeiEFJUnCKio3g">
+            <language>JAVA</language>
+            <body>&#xD;
+    frmCalculadora = new JFrame();&#xD;
+    frmCalculadora.setFont(new Font(&quot;DialogInput&quot;, Font.PLAIN, 20));&#xD;
+    frmCalculadora.setForeground(Color.BLUE);&#xD;
+    frmCalculadora.setTitle(&quot;Calculadora&quot;);&#xD;
+    frmCalculadora.setBackground(Color.BLUE);&#xD;
+    frmCalculadora.setBounds(100, 100, 339, 425);&#xD;
+    frmCalculadora.setDefaultCloseOperation(JFrame.DISPOSE_ON_CLOSE);&#xD;
+    frmCalculadora.addWindowListener(new WindowAdapter() {&#xD;
+&#xD;
+        @Override&#xD;
+        public void windowClosed(WindowEvent arg0) {&#xD;
+            // TODO Auto-generated method stub&#xD;
+            toControler.salvar();&#xD;
+            super.windowClosed(arg0);&#xD;
+        }&#xD;
+    });&#xD;
+    JPanel panel = new JPanel();&#xD;
+    frmCalculadora.getContentPane().add(panel, BorderLayout.CENTER);&#xD;
+    panel.setLayout(new MigLayout(&quot;&quot;, &quot;[grow,fill]&quot;, &quot;[grow,fill][][grow,fill][grow,fill][grow,fill][grow,fill]&quot;));&#xD;
+    textField = new JTextField();&#xD;
+    textField.setFont(new Font(&quot;Tempus Sans ITC&quot;, Font.PLAIN, 21));&#xD;
+    textField.setHorizontalAlignment(SwingConstants.RIGHT);&#xD;
+    panel.add(textField, &quot;cell 0 0,grow&quot;);&#xD;
+    textField.setColumns(10);&#xD;
+    textField.addKeyListener(new KeyAdapter() {&#xD;
+&#xD;
+        @Override&#xD;
+        public void keyPressed(KeyEvent arg0) {&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_ENTER) {&#xD;
+                toControler.teclaPrecionada(1, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_ADD) {&#xD;
+                toControler.teclaPrecionada(2, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == 106) {&#xD;
+                toControler.teclaPrecionada(3, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == 111) {&#xD;
+                toControler.teclaPrecionada(4, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == 109) {&#xD;
+                toControler.teclaPrecionada(5, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD1) {&#xD;
+                toControler.teclaPrecionada(6, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD2) {&#xD;
+                toControler.teclaPrecionada(7, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD3) {&#xD;
+                toControler.teclaPrecionada(8, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD4) {&#xD;
+                toControler.teclaPrecionada(9, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD5) {&#xD;
+                toControler.teclaPrecionada(10, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD6) {&#xD;
+                toControler.teclaPrecionada(11, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD7) {&#xD;
+                toControler.teclaPrecionada(12, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD8) {&#xD;
+                toControler.teclaPrecionada(13, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD9) {&#xD;
+                toControler.teclaPrecionada(14, false);&#xD;
+            }&#xD;
+            if (arg0.getKeyCode() == KeyEvent.VK_NUMPAD0) {&#xD;
+                toControler.teclaPrecionada(15, false);&#xD;
+            }&#xD;
+        }&#xD;
+    });&#xD;
+    JButton btnC = new JButton(&quot;C&quot;);&#xD;
+    btnC.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(16, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(btnC, &quot;flowx,cell 0 1,grow&quot;);&#xD;
+    JButton button_1 = new JButton(&quot;/&quot;);&#xD;
+    button_1.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(4, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_1, &quot;cell 0 2,grow&quot;);&#xD;
+    JButton button_4 = new JButton(&quot;*&quot;);&#xD;
+    button_4.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(3, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_4, &quot;cell 0 3,grow&quot;);&#xD;
+    // NUMEROS 1 a 0&#xD;
+    JButton button_5 = new JButton(&quot;1&quot;);&#xD;
+    button_5.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(6, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_5, &quot;flowx,cell 0 4,grow&quot;);&#xD;
+    JButton button_6 = new JButton(&quot;2&quot;);&#xD;
+    button_6.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(7, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_6, &quot;cell 0 4,grow&quot;);&#xD;
+    JButton button_7 = new JButton(&quot;3&quot;);&#xD;
+    button_7.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(8, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_7, &quot;cell 0 4,grow&quot;);&#xD;
+    JButton btnNewButton = new JButton(&quot;4&quot;);&#xD;
+    btnNewButton.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(9, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(btnNewButton, &quot;flowx,cell 0 3,grow&quot;);&#xD;
+    JButton button_2 = new JButton(&quot;5&quot;);&#xD;
+    button_2.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(10, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_2, &quot;cell 0 3,grow&quot;);&#xD;
+    JButton button_3 = new JButton(&quot;6&quot;);&#xD;
+    button_3.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(11, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_3, &quot;cell 0 3,grow&quot;);&#xD;
+    JButton button7 = new JButton(&quot;7&quot;);&#xD;
+    button7.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(12, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button7, &quot;flowx,cell 0 2,grow&quot;);&#xD;
+    JButton button8 = new JButton(&quot;8&quot;);&#xD;
+    button8.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(13, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button8, &quot;cell 0 2,grow&quot;);&#xD;
+    JButton button = new JButton(&quot;9&quot;);&#xD;
+    button.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(14, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button, &quot;cell 0 2,grow&quot;);&#xD;
+    ////////////////////////////////////////////////&#xD;
+    JButton button_8 = new JButton(&quot;+&quot;);&#xD;
+    button_8.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(2, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_8, &quot;cell 0 4,grow&quot;);&#xD;
+    JButton button_10 = new JButton(&quot;+/-&quot;);&#xD;
+    button_10.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_10, &quot;flowx,cell 0 5,grow&quot;);&#xD;
+    JButton button_9 = new JButton(&quot;0&quot;);&#xD;
+    button_9.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(15, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_9, &quot;cell 0 5,grow&quot;);&#xD;
+    JButton button_11 = new JButton(&quot;,&quot;);&#xD;
+    button_11.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_11, &quot;cell 0 5,grow&quot;);&#xD;
+    JButton button_12 = new JButton(&quot;=&quot;);&#xD;
+    button_12.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(1, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_12, &quot;cell 0 5,grow&quot;);&#xD;
+    JButton button_13 = new JButton(&quot;&lt;-&quot;);&#xD;
+    button_13.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_13, &quot;cell 0 1,grow&quot;);&#xD;
+    JButton button_14 = new JButton(&quot;-&quot;);&#xD;
+    button_14.addActionListener(new ActionListener() {&#xD;
+&#xD;
+        public void actionPerformed(ActionEvent arg0) {&#xD;
+            toControler.teclaPrecionada(5, true);&#xD;
+        }&#xD;
+    });&#xD;
+    panel.add(button_14, &quot;cell 0 1,grow&quot;);&#xD;
+</body>
+          </ownedBehavior>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_eMwVgL-AEeiEFJUnCKio3g" name="View" visibility="public" method="_eM1OAb-AEeiEFJUnCKio3g"/>
+          <ownedOperation xmi:type="uml:Operation" xmi:id="_eM6GgL-AEeiEFJUnCKio3g" name="initialize" visibility="private" method="_eM8iwL-AEeiEFJUnCKio3g"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_6ebQ0L9_EeiEFJUnCKio3g" name="java">
+      <packagedElement xmi:type="uml:Package" xmi:id="_6edGAL9_EeiEFJUnCKio3g" name="java">
+        <packagedElement xmi:type="uml:Package" xmi:id="_6edtEL9_EeiEFJUnCKio3g" name="lang">
+          <packagedElement xmi:type="uml:Class" xmi:id="_6ee7ML9_EeiEFJUnCKio3g" name="String"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Package" xmi:id="_CilUgL-AEeiEFJUnCKio3g" name="importedTypes">
+      <packagedElement xmi:type="uml:Package" xmi:id="_CispQL-AEeiEFJUnCKio3g" name="Model">
+        <packagedElement xmi:type="uml:Class" xmi:id="_CispQb-AEeiEFJUnCKio3g" name="Model"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_LVZ1AL-AEeiEFJUnCKio3g" name="View">
+        <packagedElement xmi:type="uml:Class" xmi:id="_LVZ1Ab-AEeiEFJUnCKio3g" name="View"/>
+      </packagedElement>
+      <packagedElement xmi:type="uml:Package" xmi:id="_eMX7AL-AEeiEFJUnCKio3g" name="javax">
+        <packagedElement xmi:type="uml:Package" xmi:id="_eMX7Ab-AEeiEFJUnCKio3g" name="swing">
+          <packagedElement xmi:type="uml:Class" xmi:id="_eMX7Ar-AEeiEFJUnCKio3g" name="JFrame"/>
+          <packagedElement xmi:type="uml:Class" xmi:id="_eMczgb-AEeiEFJUnCKio3g" name="JTextField"/>
+        </packagedElement>
+      </packagedElement>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_s3IfQL-AEeiEFJUnCKio3g" memberEnd="_s3IfQ7-AEeiEFJUnCKio3g _s3IfRr-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_s3IfQb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_s3IfQr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_s3IfRr-AEeiEFJUnCKio3g" name="control" type="_6Y-JEL9_EeiEFJUnCKio3g" association="_s3IfQL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_tlQJgL-AEeiEFJUnCKio3g" memberEnd="_tlSlwr-AEeiEFJUnCKio3g _tlSlxb-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_tlSlwL-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_tlSlwb-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_tlSlxb-AEeiEFJUnCKio3g" name="control2model" type="_6eKyIL9_EeiEFJUnCKio3g" association="_tlQJgL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_u5q-wL-AEeiEFJUnCKio3g" memberEnd="_u5tbAr-AEeiEFJUnCKio3g _u5tbBb-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_u5tbAL-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_u5tbAb-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_u5tbBb-AEeiEFJUnCKio3g" name="model" type="_NixrgL-AEeiEFJUnCKio3g" association="_u5q-wL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_vu9oAL-AEeiEFJUnCKio3g" memberEnd="_vu9oA7-AEeiEFJUnCKio3g _vu9oBr-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_vu9oAb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_vu9oAr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_vu9oBr-AEeiEFJUnCKio3g" name="model2control" type="_NjFNgL-AEeiEFJUnCKio3g" association="_vu9oAL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zHrQQL-AEeiEFJUnCKio3g" memberEnd="_zHrQQ7-AEeiEFJUnCKio3g _zHrQRr-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zHrQQb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zHrQQr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zHrQRr-AEeiEFJUnCKio3g" name="control" type="_6Y-JEL9_EeiEFJUnCKio3g" association="_zHrQQL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_zps_QL-AEeiEFJUnCKio3g" memberEnd="_zps_Q7-AEeiEFJUnCKio3g _zps_Rr-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_zps_Qb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_zps_Qr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_zps_Rr-AEeiEFJUnCKio3g" name="cotrolview" type="_6ZDBkL9_EeiEFJUnCKio3g" association="_zps_QL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_0bwHQL-AEeiEFJUnCKio3g" memberEnd="_0bwHQ7-AEeiEFJUnCKio3g _0byjgb-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_0bwHQb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_0bwHQr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_0byjgb-AEeiEFJUnCKio3g" name="view" type="_eM1OAb-AEeiEFJUnCKio3g" association="_0bwHQL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <packagedElement xmi:type="uml:Association" xmi:id="_1MRlQL-AEeiEFJUnCKio3g" memberEnd="_1MRlQ7-AEeiEFJUnCKio3g _1MRlRr-AEeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_1MRlQb-AEeiEFJUnCKio3g" source="org.eclipse.papyrus">
+        <details xmi:type="ecore:EStringToStringMapEntry" xmi:id="_1MRlQr-AEeiEFJUnCKio3g" key="nature" value="UML_Nature"/>
+      </eAnnotations>
+      <ownedEnd xmi:type="uml:Property" xmi:id="_1MRlRr-AEeiEFJUnCKio3g" name="viewcontrol" type="_YBvkwL-AEeiEFJUnCKio3g" association="_1MRlQL-AEeiEFJUnCKio3g"/>
+    </packagedElement>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6V2joL9_EeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6V6OAL9_EeiEFJUnCKio3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/PapyrusJava/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://PapyrusJava_PROFILES/PapyrusJava.profile.uml#_j9REUByGEduN1bTiWJ0lyw"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6XHH4L9_EeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6XI9EL9_EeiEFJUnCKio3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/papyrus/Codegen/1#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://Codegen_PROFILES/Codegen.profile.uml#_fPDsIBa-EearhdjjJ6cVzQ"/>
+    </profileApplication>
+    <profileApplication xmi:type="uml:ProfileApplication" xmi:id="_6Xap4L9_EeiEFJUnCKio3g">
+      <eAnnotations xmi:type="ecore:EAnnotation" xmi:id="_6XcfEL9_EeiEFJUnCKio3g" source="http://www.eclipse.org/uml2/2.0.0/UML">
+        <references xmi:type="ecore:EPackage" href="http://www.eclipse.org/uml2/5.0.0/UML/Profile/Standard#/"/>
+      </eAnnotations>
+      <appliedProfile xmi:type="uml:Profile" href="pathmap://UML_PROFILES/Standard.profile.uml#_0"/>
+    </profileApplication>
+  </uml:Model>
+  <PapyrusJava:External xmi:id="_6d5FUL9_EeiEFJUnCKio3g" name="CotrolView" base_Classifier="_6ZDBkL9_EeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_6eUjIL9_EeiEFJUnCKio3g" name="Control2Model" base_Classifier="_6eKyIL9_EeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_6eoFIL9_EeiEFJUnCKio3g" name="java.lang.String" base_Classifier="_6ee7ML9_EeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_Ci2aQL-AEeiEFJUnCKio3g" name="Model.Model" base_Classifier="_CispQb-AEeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_LVmCQL-AEeiEFJUnCKio3g" name="View.View" base_Classifier="_LVZ1Ab-AEeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_NjHpwL-AEeiEFJUnCKio3g" name="Model2Control" base_Classifier="_NjFNgL-AEeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_eMaXQL-AEeiEFJUnCKio3g" name="javax.swing.JFrame" base_Classifier="_eMX7Ar-AEeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_eMfPwL-AEeiEFJUnCKio3g" name="javax.swing.JTextField" base_Classifier="_eMczgb-AEeiEFJUnCKio3g"/>
+  <PapyrusJava:External xmi:id="_eMpAwL-AEeiEFJUnCKio3g" name="ViewControl" base_Classifier="_YBvkwL-AEeiEFJUnCKio3g"/>
+  <standard:Create xmi:id="_eM1OAL-AEeiEFJUnCKio3g" base_BehavioralFeature="_eMwVgL-AEeiEFJUnCKio3g"/>
+</xmi:XMI>
